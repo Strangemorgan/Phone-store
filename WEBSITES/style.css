@@ -1,0 +1,134 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background-color: floralwhite;
+    
+    
+}
+nav{
+    background-color:rgb(107, 44, 179);
+    color: white;
+    padding: 20px 50px;
+}
+
+.navTop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Search{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: rgb(16, 124, 212);
+}
+.searchInput{
+    border: none;
+    background-color: transparent;
+
+}
+.searchInput::placeholder{
+    color:rgb(112, 25, 163);
+}
+.navButtom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.MenuItem{
+    margin-right: 50px;
+    cursor: pointer;
+    color: rgb(216, 209, 223);
+}
+.sliderItem{
+    background: url("https://th.bing.com/th/id/R.4c2d9e775a082a3e7f47ce95c9a7bb41?rik=ybkYvp8JqloybQ&riu=http%3a%2f%2fimages.unsplash.com%2fphoto-1575081119875-f5e06f595e5d%3fcrop%3dentropy%26cs%3dtinysrgb%26fit%3dmax%26fm%3djpg%26ixid%3dMnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjE5MzU3OTgx%26ixlib%3drb-1.2.1%26q%3d80%26w%3d1080&ehk=mFifgyttyPdrRtVDT7D4PbNsrFkouVJ44icO9MhZTNE%3d&risl=&pid=ImgRaw&r=0");
+    display: flex;
+
+}
+.sliderWrapper{
+    display: flex;
+    width: 600vw;
+    transition: all 1.5s ease-in-out;
+    
+}
+.sliderItem{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.sliderTitle{
+    position: absolute;
+    color: rgb(90, 90, 207);
+top: 1%;
+left: 0;
+
+}
+.ItemPrice{
+    position: absolute;
+    
+    font-size: 50px;
+    left: 0;
+    bottom: 0;
+}
+.BuyNow{
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    font-size: 30px;
+    font-weight: 400;
+    border-style:none;
+    cursor: pointer;
+}
+.BuyNow:hover{
+    background-color: rgb(247, 0, 255);
+    color: white;
+}
+.slider-frame{
+    overflow: hidden;
+    height: 800px;
+    width: 1200px;
+    margin-left: 360px;
+    margin-top: 20px;
+}
+@-webkit-keyframes slider_animation{
+    0%{left:0px;}
+    10%{left:0px;}
+    20%{left:1200px;}
+    30%{left:1200px;}
+    40%{left:2400px;}
+    50%{left:2400px;}
+    60%{left:1200px;}
+    70%{left:1200px;}
+    80%{left:0px;}
+    90%{left:0px;}
+    100%{left:0px;}
+}
+.slider-img{
+    width: 3600px;
+    height: 800px;
+    margin: 0 0 0 -2400px;
+    position: relative;
+    -webkit-animation-name: slide_animation;
+    -webkit-animation-duration: 33s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction:alternate;
+    -webkit-animation-play-state: running;
+}
+.Img-Container{
+    height: 800px;
+    width: 1200px;
+    position: relative;
+    float: left;
+
+}
+.slider{
+    overflow: hidden;
+}
